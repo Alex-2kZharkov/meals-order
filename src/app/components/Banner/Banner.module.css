@@ -1,0 +1,12 @@
+.title, .content {
+    color: #ffffff;
+}
+.title {
+    margin-top: 6px;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.content {
+
+}

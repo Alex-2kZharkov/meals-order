@@ -1,0 +1,8 @@
+.container {
+    position: relative;
+    z-index: 11;
+    max-width: 700px;
+    padding: 18px 12px;
+    border-radius: 1em;
+    text-align: center;
+}

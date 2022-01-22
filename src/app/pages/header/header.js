@@ -1,20 +1,16 @@
 import style from './header.module.css'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Cart from "../cart/cart";
+import BackgroundImage from "../../assets/landing-image.jpeg";
 
 const Header = () => {
     return (
         <header className={style.header}>
             <div className={style.container}>
                 <div className={style.title}>ReactMeals</div>
-                <div className={style['cart-container']}>
-                    <ShoppingCartIcon sx={{color: "#ffffff"}}/>
-                    <div className={style['cart-title']}>Your Cart</div>
-                    <div className={style['cart-quantity-container']}>
-                        <div className={style['cart-quantity-title']}>
-                                0
-                        </div>
-                    </div>
-                </div>
+                <Cart />
+            </div>
+            <div className={style["image-container"]}>
+                <img src={BackgroundImage} alt="Background" width="100%" height="300"/>
             </div>
         </header>
     )

@@ -1,5 +1,4 @@
 .header {
-    position: fixed;
     z-index: 10;
     width: 100%;
     background-color: #771F02;
@@ -15,24 +14,20 @@
     font-weight: 700;
     color: #ffffff;
 }
-.cart-title, .cart-quantity-title {
-    font-weight: 700;
-    color: #ffffff;
-}
-.cart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    box-sizing: border-box;
-    padding: 10px 0;
-    min-width: 250px;
-    border-radius: 25px;
-    background-color: #401300;
+
+.image-container {
+    position: relative;
 }
 
-.cart-quantity-container {
-    padding: 6px 15px;
-    border-radius: 999px;
-    background-color: #A43219;
+.image-container img {
+    object-fit: cover;
+}
+.image-container::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 101%;
+    height: 100px;
+    transform: rotate(-2deg) translateY(-2rem) translateX(-0.5rem);
+    background-color: #252525;
 }

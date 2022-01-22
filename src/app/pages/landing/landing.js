@@ -1,13 +1,16 @@
-import Header from "../header/header";
-import BackgroundImage from '../../assets/landing-image.jpeg'
-import style from './landing.module.css';
+import Header from '../header/header';
+import Banner from '../../components/Banner/Banner';
+import Meals from "../meals/meals";
 
 const Landing = () => {
-    return <>
+  return (
+    <>
       <Header />
-        <div className={style["landing-image-container"]}>
-            <img src={BackgroundImage} alt="Background" width="100%" height="400"/>
-        </div>
+      <main>
+        <Banner />
+        <Meals />
+      </main>
     </>
-}
+  );
+};
 export default Landing;
