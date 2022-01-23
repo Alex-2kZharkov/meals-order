@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    margin: 10px 1.5em;
+    padding-bottom: 1em;
+    grid-template-columns: 0.4fr 0.15fr;
+    row-gap: 0.5rem;
+    justify-content: space-between;
+    justify-items: start;
+    border-bottom: solid 1px #d2d6db;
+}
+
+.item:nth-child(2n) {
+    justify-self: end;
+}
+
+.amount-container {
+    display: flex;
+    gap: 10px;
+}
+.name {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.description {
+    margin: 0;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+.amount {
+    font-size: 1em;
+    font-weight: 700;
+}
+.input {
+    padding: 3px 7px;
+    width: 30px;
+    border: solid 1px #d2d6db;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #771F02;
+}

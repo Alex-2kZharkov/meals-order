@@ -6,7 +6,7 @@ const Meals = () => {
   return (
     <Card
       customStyle={{
-        maxWidth: '1200px',
+        maxWidth: '900px',
         backgroundColor: '#ffffff',
         margin: '2rem auto 0'
       }}
